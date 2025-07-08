@@ -52,7 +52,7 @@ interface NavbarProps {
   };
 }
 
-const Navbar = ({
+export default function Navbar({
   logo = {
     url: "/",
     src: "/assets/boost.png",
@@ -77,9 +77,9 @@ const Navbar = ({
       url: "#get-started"
     },
   ],
-}: NavbarProps) => {
+}: NavbarProps) {
   return (
-    <section className="py-4 flex text-slerate-primary">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 flex text-slerate-primary">
       <div className="w-full justify-center px-10">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
@@ -144,7 +144,7 @@ const Navbar = ({
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
@@ -217,5 +217,3 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
     </a>
   );
 };
-
-export default Navbar;
