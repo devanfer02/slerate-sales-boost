@@ -31,7 +31,7 @@ export const featureItems = [
 
 export default function Features() {
   return (
-    <section className="bg-slerate-primary-2 pt-20 pb-24">
+    <section className="bg-slerate-primary-2 pt-20 pb-24" id='features'>
       <div className="container mx-auto px-4">
         <div className='mb-16'>
           <h1 className='text-center text-4xl font-bold drop-shadow-2xl text-white border-b-5 border-red-400 w-fit mx-auto'>

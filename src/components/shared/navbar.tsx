@@ -65,12 +65,12 @@ export default function Navbar({
       url: "#"
     },
     {
-      title: "Features",
-      url: "#features",
+      title: "About Us",
+      url: "#about",
     },
     {
-      title: "About Us",
-      url: "#about-us",
+      title: "Features",
+      url: "#features",
     },
     {
       title: "Get Started",
