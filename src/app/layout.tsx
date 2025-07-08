@@ -23,10 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jakartaSans.variable} antialiased scroll-smooth overflow-y-scroll`}
+        className={`${jakartaSans.variable} antialiased`}
       >
         <Navbar />
-        <div className="h-[1px] bg-slerate-primary"/>
         <main>
           {children}
         </main>
