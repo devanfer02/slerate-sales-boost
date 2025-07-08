@@ -13,7 +13,7 @@ export default function CTA() {
             <p className="mt-4 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
               Stop guessing and start growing. Get instant access to all our AI-powered features and see the results for yourself. No credit card required.
             </p>
-            <Button size="lg" className="mt-8">
+            <Button size="lg" className="mt-8 bg-slerate-primary text-white duration-300 ease-in-out hover:bg-red-400">
               Start Your 14-Day Free Trial
             </Button>
           </div>
