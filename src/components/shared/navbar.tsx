@@ -80,7 +80,7 @@ export default function Navbar({
 }: NavbarProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 flex text-slerate-primary">
-      <div className="w-full justify-center px-10">
+      <div className="w-full justify-center lg:px-10 px-5">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
@@ -117,11 +117,11 @@ export default function Navbar({
                   <Menu className="size-4" />
                 </Button>
               </SheetTrigger>
-              <SheetContent className="overflow-y-auto">
+              <SheetContent className="overflow-y-auto bg-slerate-primary/75 text-white">
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <span className="text-lg lg:text-xl font-semibold tracking-tighter text-slerate-primary">
+                      <span className="text-lg lg:text-xl font-semibold tracking-tighter text-white">
                         {logo.title}
                       </span>
                     </a>
@@ -180,7 +180,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
   if (item.items) {
     return (
       <AccordionItem key={item.title} value={item.title} className="border-b-0">
-        <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline text-slerate-primary">
+        <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline text-white">
           {item.title}
         </AccordionTrigger>
         <AccordionContent className="mt-2">
@@ -193,7 +193,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-slerate-primary text-md font-semibold">
+    <a key={item.title} href={item.url} className="text-white text-md font-semibold">
       {item.title}
     </a>
   );
