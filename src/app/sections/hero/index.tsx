@@ -52,7 +52,7 @@ export default function Hero() {
                   <p className="mt-4 max-w-xl lg:text-xl text-lg opacity-90 drop-shadow-md">
                     {content.subtext}
                   </p>
-                  <Button size="lg" className="mt-6 bg-slerate-primary duration-300 ease-in-out hover:bg-white hover:text-slerate-primary">
+                  <Button size="lg" className="mt-6 bg-slerate-primary duration-300 ease-in-out hover:bg-red-400">
                     <a href={index === slideContent.length - 1 ? "#get-started" : "#features"}>
                       {index === slideContent.length - 1 ? "Start Free Trial" : "Learn More"}
                     </a>
